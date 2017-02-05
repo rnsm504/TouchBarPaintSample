@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F21990541E3C0B9800D514B1 /* CustomeWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21990531E3C0B9800D514B1 /* CustomeWindowController.swift */; };
 		F26CD9E81E34A5030047F0C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CD9E71E34A5030047F0C6 /* AppDelegate.swift */; };
 		F26CD9EA1E34A5030047F0C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CD9E91E34A5030047F0C6 /* ViewController.swift */; };
 		F26CD9EC1E34A5030047F0C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26CD9EB1E34A5030047F0C6 /* Assets.xcassets */; };
 		F26CD9EF1E34A5030047F0C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26CD9ED1E34A5030047F0C6 /* Main.storyboard */; };
 		F26CD9FA1E34A5030047F0C6 /* TouchBarPaintSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CD9F91E34A5030047F0C6 /* TouchBarPaintSampleTests.swift */; };
 		F26CDA051E34A5030047F0C6 /* TouchBarPaintSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CDA041E34A5030047F0C6 /* TouchBarPaintSampleUITests.swift */; };
+		F26CDA151E34B2BE0047F0C6 /* CustomeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CDA141E34B2BE0047F0C6 /* CustomeLine.swift */; };
+		F26CDA1D1E3646BB0047F0C6 /* CustomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CDA1C1E3646BB0047F0C6 /* CustomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F21990531E3C0B9800D514B1 /* CustomeWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeWindowController.swift; sourceTree = "<group>"; };
 		F26CD9E41E34A5030047F0C6 /* TouchBarPaintSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchBarPaintSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26CD9E71E34A5030047F0C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F26CD9E91E34A5030047F0C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +49,8 @@
 		F26CDA001E34A5030047F0C6 /* TouchBarPaintSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchBarPaintSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26CDA041E34A5030047F0C6 /* TouchBarPaintSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarPaintSampleUITests.swift; sourceTree = "<group>"; };
 		F26CDA061E34A5030047F0C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26CDA141E34B2BE0047F0C6 /* CustomeLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeLine.swift; sourceTree = "<group>"; };
+		F26CDA1C1E3646BB0047F0C6 /* CustomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +102,12 @@
 			isa = PBXGroup;
 			children = (
 				F26CD9E71E34A5030047F0C6 /* AppDelegate.swift */,
+				F21990531E3C0B9800D514B1 /* CustomeWindowController.swift */,
 				F26CD9E91E34A5030047F0C6 /* ViewController.swift */,
+				F26CDA141E34B2BE0047F0C6 /* CustomeLine.swift */,
 				F26CD9EB1E34A5030047F0C6 /* Assets.xcassets */,
 				F26CD9ED1E34A5030047F0C6 /* Main.storyboard */,
+				F26CDA1C1E3646BB0047F0C6 /* CustomeView.swift */,
 				F26CD9F01E34A5030047F0C6 /* Info.plist */,
 			);
 			path = TouchBarPaintSample;
@@ -258,6 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F26CDA151E34B2BE0047F0C6 /* CustomeLine.swift in Sources */,
+				F21990541E3C0B9800D514B1 /* CustomeWindowController.swift in Sources */,
+				F26CDA1D1E3646BB0047F0C6 /* CustomeView.swift in Sources */,
 				F26CD9EA1E34A5030047F0C6 /* ViewController.swift in Sources */,
 				F26CD9E81E34A5030047F0C6 /* AppDelegate.swift in Sources */,
 			);
@@ -505,6 +517,7 @@
 				F26CDA0B1E34A5030047F0C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F26CDA0C1E34A5030047F0C6 /* Build configuration list for PBXNativeTarget "TouchBarPaintSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +526,7 @@
 				F26CDA0E1E34A5030047F0C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F26CDA0F1E34A5030047F0C6 /* Build configuration list for PBXNativeTarget "TouchBarPaintSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +535,7 @@
 				F26CDA111E34A5030047F0C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

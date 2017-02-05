@@ -8,20 +8,27 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
-
+class ViewController: NSViewController, NSTextViewDelegate {
+        
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+     }
 
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
     }
-
-
+    
+    // MARK: - NSTextViewDelegate
+    
+    func textView(_ textView: NSTextView, shouldUpdateTouchBarItemIdentifiers identifiers: [NSTouchBarItemIdentifier]) -> [NSTouchBarItemIdentifier] {
+        
+        return []   // We want to show only our NSTouchBarItem instances.
+    }
+    
+    
 }
 

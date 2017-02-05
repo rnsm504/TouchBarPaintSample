@@ -85,7 +85,7 @@ class CustomeWindowController : NSWindowController {
     
     
     @available(OSX 10.12.2, *)
-    func changeFontSizeBySlider(_ sender: NSSlider) -> Void {
+    func changePenWidthBySlider(_ sender: NSSlider) -> Void {
         let width = CGFloat(sender.floatValue)
         
         let appDelegate: AppDelegate = NSApplication.shared().delegate as! AppDelegate
@@ -156,7 +156,7 @@ extension CustomeWindowController: NSTouchBarDelegate {
             slider.minValue = 2.0
             slider.maxValue = 20.0
             slider.target = self
-            slider.action = #selector(changeFontSizeBySlider)
+            slider.action = #selector(changePenWidthBySlider)
             
             // Set the font size for the slider item to the same value as the stepper.
             slider.integerValue = Int(DefaultPenWidth)

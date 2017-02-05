@@ -40,8 +40,8 @@ class CustomeWindowController : NSWindowController {
         
         if #available(OSX 10.12.2, *) {
             if ((NSClassFromString("NSTouchBar")) != nil) {
-                let fontSizeTouchBarItem = self.touchBar!.item(forIdentifier: .popover) as! NSPopoverTouchBarItem
-                let sliderTouchBar = fontSizeTouchBarItem.popoverTouchBar
+                let penWidthTouchBarItem = self.touchBar!.item(forIdentifier: .popover) as! NSPopoverTouchBarItem
+                let sliderTouchBar = penWidthTouchBarItem.popoverTouchBar
                 let sliderTouchBarItem = sliderTouchBar.item(forIdentifier: .popoverSlider) as! NSSliderTouchBarItem
                 let slider = sliderTouchBarItem.slider
                 
